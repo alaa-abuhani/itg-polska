@@ -1,0 +1,30 @@
+%header_icon {
+  font-family: $font_family;
+  font-size: $font-size-nav-span;
+  font-weight: $font-weight;
+  font-stretch: $font-stretch;
+  font-style: $font-style;
+  line-height: $header-icon-line-height;
+  letter-spacing: $header-icon-letter-spacing;
+  color: $font-color;
+}
+%cart_quantity {
+  font-family: $font-family;
+  font-size: $font-size-header;
+  font-stretch: $font-stretch;
+  font-style: $font-weight-cart-quantity;
+  line-height: $line-height-cart-quantity;
+  letter-spacing: $letter-spacing;
+  color: $color-cart-quantity;
+  text-align: $text-center;
+}
+%menue_item {
+  font-family: $font-family;
+  font-size: $font-size-header;
+  font-weight: $font-weight-menu;
+  font-stretch: $font-stretch;
+  font-style: $font-style;
+  line-height: $line-height-menu;
+  letter-spacing: $letter-spacing-menu;
+  color: $font-color;
+}

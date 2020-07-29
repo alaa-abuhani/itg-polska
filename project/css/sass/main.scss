@@ -1,0 +1,12 @@
+@import 'componant/font';
+@import 'helpers/variables';
+@import 'helpers/extends';
+@import 'layout/header';
+@import 'layout/banner';
+@import 'layout/slider';
+@import 'layout/cate';
+@import 'layout/footer';
+
+body {
+  font-family: Eina03;
+}

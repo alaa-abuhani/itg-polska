@@ -1,0 +1,54 @@
+{
+
+    "items": [{
+            "product-img": "../imag-pro/slide-image/product1/product-img.png",
+            "product-cart": "../imag-pro/slide-image/cart/cart-copy-5.png",
+            "product-name": "Fruit Fantasy Body",
+            "product-brand": "Joanna Cosmetic Laboratory",
+            "product-line": "PRODUCTS FROM THE LINE"
+        },
+        {
+            "product-img": "../imag-pro/slide-image/product2/product-img.png",
+            "product-cart": "../imag-pro/slide-image/cart/cart-copy-5.png",
+            "product-name": "Joli Color Shine long lasting lipstick",
+            "product-brand": "QUIZ Cosmetics",
+            "product-line": "PRODUCTS FROM THE LINE"
+        },
+        {
+            "product-img": "../imag-pro/slide-image/product3/product-img.png",
+            "product-cart": "../imag-pro/slide-image/cart/cart-copy-5.png",
+            "product-name": "Burlesque",
+            "product-brand": "wibo",
+            "product-line": "PRODUCTS FROM THE LINE"
+        },
+        {
+            "product-img": "../imag-pro/slide-image/product4/product-img.png",
+            "product-cart": "../imag-pro/slide-image/cart/cart-copy-5.png",
+            "product-name": "TO MATTIFY",
+            "product-brand": "NOUBA",
+            "product-line": "PRODUCTS FROM THE LINE"
+        },
+        {
+            "product-img": "../imag-pro/slide-image/product1/product-img.png",
+            "product-cart": "../imag-pro/slide-image/cart/cart-copy-5.png",
+            "product-name": "Fruit Fantasy Body",
+            "product-brand": "Joanna Cosmetic Laboratory",
+            "product-line": "PRODUCTS FROM THE LINE"
+        },
+        {
+            "product-img": "../imag-pro/slide-image/product2/product-img.png",
+            "product-cart": "../imag-pro/slide-image/cart/cart-copy-5.png",
+            "product-name": "Joli Color Shine long lasting lipstick",
+            "product-brand": "QUIZ Cosmetics",
+            "product-line": "PRODUCTS FROM THE LINE"
+        },
+        {
+            "product-img": "../imag-pro/slide-image/product3/product-img.png",
+            "product-cart": "../imag-pro/slide-image/cart/cart-copy-5.png",
+            "product-name": "Burlesque",
+            "product-brand": "wibo",
+            "product-line": "PRODUCTS FROM THE LINE"
+        }
+
+    ]
+}

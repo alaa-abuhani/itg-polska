@@ -1,0 +1,77 @@
+section .bannar .head {
+  margin-top: 40px;
+}
+
+@media (max-width: 991.98px) {
+  section .bannar .head {
+    margin-top: 16px;
+  }
+}
+
+section {
+  padding: 82px 0 40px 0;
+  background-image: url('../../imag-pro/image/hero-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 991.98px) {
+  section {
+    // background-image: url('../../imag-pro/image/mobile/hero-img@2x.png');
+    // background-size: cover;
+    padding: 40px 0 40px 0;
+  }
+}
+
+.bannar .btn1 button {
+  border: solid 1px #edb15d;
+  background-color: transparent;
+  padding: 25px 35px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: 1.5px;
+  color: #edb15d;
+
+  &:hover {
+    background-color: #edb15d;
+    color: #000;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.bannar .head h3.he1 {
+  font-family: Eina03;
+  font-size: 17px;
+  line-height: 1.65;
+
+  color: #ffffff;
+  margin-bottom: 0;
+}
+@media (max-width: 991.98px) {
+  .bannar .head h3.he1 {
+    margin-top: 16px;
+  }
+}
+
+.bannar .head p.he2 {
+  font-family: Eina03;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.65;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+@media (max-width: 991.98px) {
+  .bannar .head h3.he1,
+  .bannar .head p.he2 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 991.98px) {
+  .bannar .head p.he2 {
+    margin-bottom: 24px;
+  }
+}

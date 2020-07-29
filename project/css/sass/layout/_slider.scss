@@ -1,0 +1,212 @@
+.slider {
+  background-image: url('../../imag-pro/image/best-sellers-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slider .container-fluid {
+  padding: 115px 0px 156px 108px;
+}
+@media (max-width: 576px) {
+  .slider .container-fluid {
+    padding: 60px 16px 60px 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slider .container-fluid {
+    padding: 60px 30px 60px 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slider .container-fluid {
+    padding: 60px 70px 60px 70px;
+  }
+}
+.slider .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.slider .top {
+  padding-right: 108px;
+}
+@media (max-width: 991.98px) {
+  .slider .top {
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+}
+
+.slider .top .slide-link a {
+  font-family: Eina03;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.14;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.slider .slide-head h2 {
+  font-family: Cochin;
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 1.07;
+  color: #ffffff;
+}
+@media (max-width: 991.98px) {
+  .slider .slide-head h2 {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+}
+
+.slider .slide-head h4 {
+  font-family: Eina03;
+  font-size: 17px;
+  line-height: 1.65;
+  color: #ffffff;
+}
+@media (max-width: 991.98px) {
+  .slider .slide-head h4 {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
+.slider .wrapper-item-slide {
+  padding-top: 107px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 767.98px) {
+  .slider .wrapper-item-slide {
+    padding-top: 48px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slider .wrapper-item-slide {
+    padding-top: 60px;
+  }
+}
+
+.slider .wrapper-item-slide .card {
+  box-shadow: 0 40px 48px 0 rgba(30, 30, 31, 0.16);
+  background-color: #ffffff;
+  position: relative;
+  &:focus {
+    outline: none;
+  }
+}
+.slider .wrapper-item-slide .card:not(:last-of-type) {
+  margin-right: 24px;
+}
+
+@media (max-width: 767.98px) {
+  .slider .wrapper-item-slide .card:not(:last-of-type) {
+    margin-right: 11px;
+  }
+}
+
+.slider .wrapper-item-slide .card .container-img img {
+  max-width: 100%;
+  margin: 16px auto 12px auto;
+}
+
+.slider .wrapper-item-slide .card h5 {
+  font-family: Eina03;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #000;
+  margin: auto;
+  min-height: 10px;
+}
+@media (max-width: 991.98px) {
+  .slider .wrapper-item-slide .card h5 {
+    font-family: Eina03;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+
+.slider .wrapper-item-slide .card .separator {
+  height: 1px;
+  opacity: 0.1;
+  background-color: red;
+  border: solid 1px #000;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+@media (max-width: 767.98px) {
+  .slider .wrapper-item-slide .card .separator {
+    margin-top: 12px;
+    margin-bottom: 11px;
+  }
+}
+
+.slider .wrapper-item-slide .card p {
+  margin: auto;
+  font-family: Eina03;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #000;
+  padding-bottom: 35px;
+}
+@media (max-width: 991.98px) {
+  .slider .wrapper-item-slide .card p {
+    padding-bottom: 25px;
+    font-size: 11px;
+    line-height: 1.18;
+    letter-spacing: 0.37px;
+  }
+}
+
+.slider .wrapper-item-slide .card h6 {
+  font-family: Eina03;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.14;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #000;
+}
+@media (max-width: 991.98px) {
+  .slider .wrapper-item-slide .card h6 {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+  }
+}
+
+.slider .wrapper-item-slide .card .cart {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  right: 2px;
+  z-index: 5;
+}
+
+@media (max-width: 991.98px) {
+  .slider .wrapper-item-slide .card .cart {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.slider .wrapper-item-slide .card .asset-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
