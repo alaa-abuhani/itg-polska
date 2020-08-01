@@ -4,8 +4,8 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     livereload = require('gulp-livereload'),
-    uglify = require('gulp-uglify'),
-    zip = require('gulp-zip');
+    uglify = require('gulp-uglify');
+
 
 //html task
 gulp.task('html', async function () {
@@ -30,18 +30,13 @@ gulp.task('css', async function () {
 //js task
 gulp.task('js', async function () {
     return gulp.src('project/js/*.js')
+
         .pipe(concat('main.js'))
         // .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
         .pipe(livereload());
 });
 
-// compress task
-gulp.task('compress', async function () {
-    return gulp.src('dist/**/*.*')
-        .pipe(zip("webcop.zip"))
-        .pipe(gulp.dest('.'))
-});
 
 // watch task
 gulp.task('watch', async function () {
@@ -50,7 +45,6 @@ gulp.task('watch', async function () {
     gulp.watch('project/index.html', gulp.series('html'));
     gulp.watch('project/css/sass/**/*.scss', gulp.series('css'));
     gulp.watch('project/js/*.js', gulp.series('js'));
-    gulp.watch('dist/**/*.*', gulp.series('compress'));
 });
 
 //defaullt task
