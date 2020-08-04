@@ -28,16 +28,17 @@ gulp.task('css', async function () {
 //js task
 gulp.task('js', async function () {
     return gulp.src('project/js/*.js')
-
+        .pipe(sourcemaps.init())
         .pipe(concat('main.js'))
         // .pipe(uglify())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/js'))
 });
 
 
 // watch task
 gulp.task('watch', async function () {
-    livereload.listen();
+
     gulp.watch('project/index.html', gulp.series('html'));
     gulp.watch('project/css/sass/**/*.scss', gulp.series('css'));
     gulp.watch('project/js/*.js', gulp.series('js'));
