@@ -10,7 +10,7 @@ function closeNav() {
 //hover mini cart slider
 function onover(x) {
     x.getElementsByClassName("cart-hover")[0].style.backgroundColor = '#000';
-    x.getElementsByClassName("img-hover")[0].src = "../../imag-pro/cart-copy/cart-copy-2.png";
+    x.getElementsByClassName("img-hover")[0].src = "../imag-pro/cart-copy/cart-copy-2.png";
 }
 
 function onleave(x) {
