@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    livereload = require('gulp-livereload'),
+    // livereload = require('gulp-livereload'),
     uglify = require('gulp-uglify');
 
 
@@ -24,7 +24,7 @@ gulp.task('css', async function () {
         .pipe(concat('main.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/css'))
-        .pipe(livereload());
+    // .pipe(livereload());
 })
 
 //js task
@@ -34,13 +34,13 @@ gulp.task('js', async function () {
         .pipe(concat('main.js'))
         // .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
-        .pipe(livereload());
+    // .pipe(livereload());
 });
 
 
 // watch task
 gulp.task('watch', async function () {
-    require('./server.js')
+    // require('./server.js')
     livereload.listen();
     gulp.watch('project/index.html', gulp.series('html'));
     gulp.watch('project/css/sass/**/*.scss', gulp.series('css'));

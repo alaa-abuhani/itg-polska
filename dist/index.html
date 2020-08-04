@@ -14,6 +14,9 @@
     <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
+    <style>
+
+    </style>
 </head>
 
 <body>
@@ -112,9 +115,8 @@
                         <div class="mobile d-flex d-lg-none">
                             <!-- Toggler/collapsibe Button -->
                             <div class="one d-flex">
-                                <div class="btn1 d-inline-block">
-                                    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
-                                        data-target="#collapsibleNavbar">
+                                <div class="btn1 d-inline-block" onclick="openNav()">
+                                    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse">
                                         <span class="d-block text-left">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                                 viewBox="0 0 25 25">
@@ -194,7 +196,162 @@
                             </div>
 
                         </div>
-                        <!-- </nav> -->
+                        <div id="myNav" class="overlay d-block d-lg-none">
+                            <div class="header-mobile-over d-flex justify-content-between align-items-center">
+
+                                <a href=" javascript:void(0)" class="closebtn  d-block" onclick="closeNav()">
+                                    <!-- <img src="../imag-pro/menu_2020-08-02/menu.png"> -->
+                                    ×
+                                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    </svg> -->
+
+                                </a>
+                                <div class="logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="14" viewBox="0 0 70 14">
+                                        <path fill="#F9F9F9"
+                                            d="M3.331 1.45H1.42v6.207h1.912c1.302 0 2.3-.235 2.997-.705.696-.47 1.045-1.267 1.045-2.388 0-1.135-.349-1.937-1.045-2.408-.697-.47-1.695-.706-2.997-.706zm.02 7.426H1.42v4.892H0V.232h3.351c1.722 0 3.065.358 4.031 1.073.966.716 1.45 1.802 1.45 3.259 0 1.456-.48 2.54-1.44 3.248-.96.71-2.306 1.064-4.04 1.064zm18.077-6.923c.985 1.302 1.478 2.984 1.478 5.047 0 2.063-.496 3.745-1.488 5.047C20.426 13.349 18.983 14 17.09 14c-1.88 0-3.315-.651-4.307-1.953-.992-1.302-1.489-2.984-1.489-5.047 0-2.076.493-3.761 1.479-5.057C13.76.648 15.199 0 17.09 0c1.892 0 3.338.651 4.337 1.953zM12.774 7c0 1.702.358 3.084 1.074 4.148.716 1.063 1.797 1.595 3.243 1.595 1.459 0 2.546-.532 3.262-1.595.717-1.064 1.075-2.446 1.075-4.148 0-1.702-.358-3.084-1.075-4.148-.716-1.063-1.803-1.595-3.262-1.595s-2.543.528-3.253 1.586C13.128 3.9 12.774 5.285 12.774 7zM26 13.768V.232h1.42V12.55h6.544v1.218h-7.964zm9.797-.503l.276-1.237c1.38.49 2.629.734 3.746.734 1.038 0 1.843-.203 2.415-.609.571-.406.857-1.015.857-1.827 0-.825-.276-1.434-.828-1.827-.552-.394-1.445-.777-2.68-1.15-1.25-.4-2.176-.884-2.78-1.451-.605-.567-.907-1.367-.907-2.398 0-1.122.394-1.985 1.183-2.591C37.868.303 38.946 0 40.313 0c1.182 0 2.286.193 3.311.58l-.295 1.18c-1.117-.348-2.09-.522-2.918-.522-2.037 0-3.055.747-3.055 2.243 0 .722.226 1.266.68 1.634.423.343 1.1.666 2.033.97l.204.064c.565.18 1.019.339 1.36.474.342.135.723.319 1.144.551.42.232.742.48.966.745.223.264.414.602.571 1.015.158.412.237.876.237 1.392 0 1.25-.44 2.175-1.32 2.775-.881.6-2.005.899-3.372.899-1.524 0-2.878-.245-4.06-.735zm19.831.503l-4.415-6.285c-.75.49-1.564.954-2.445 1.393v4.892H47.35V.232h1.42v7.251c1.866-.992 3.295-2.056 4.287-3.19.992-1.135 1.646-2.488 1.961-4.061h1.42c-.526 2.565-1.906 4.725-4.14 6.478l5.027 7.058h-1.696zm8.516-12.105c-.828 1.818-1.728 4.119-2.7 6.903h5.401l-.305-.863c-.856-2.4-1.655-4.414-2.396-6.04zm4.396 12.105c-.368-1.25-.795-2.578-1.281-3.983h-6.23c-.486 1.405-.913 2.732-1.28 3.983h-1.46C60.026 8.263 61.728 3.751 63.397.232h1.479C66.7 4.087 68.41 8.599 70 13.768h-1.459z" />
+                                    </svg>
+
+                                </div>
+                                <div class="account">
+                                    <a href="#">
+                                        <span class=" d-inline-block text-rigth">hi,maysa</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24">
+                                            <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="1.3">
+                                                <path
+                                                    d="M18 19.75v-2.667c0-2.945-2.56-5.333-9-5.333-6.44 0-9 2.388-9 5.333v2.667M11.828 1.922c1.563 1.562 1.563 4.094 0 5.656-1.562 1.563-4.094 1.563-5.656 0-1.563-1.562-1.563-4.094 0-5.656 1.562-1.563 4.094-1.563 5.656 0"
+                                                    transform="translate(3 1.25)" />
+                                            </g>
+                                        </svg>
+
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="overlay-content d-flex flex-column justify-content-between ">
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item products">
+                                        <a class="nav-link" href="#">
+                                            Products
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="none" fill-rule="evenodd" stroke="#000"
+                                                        stroke-linejoin="round" stroke-width="2" d="M7 10L12 14 17 10"
+                                                        transform="matrix(0 1 1 0 0 0)" />
+                                                </svg>
+                                            </span>
+                                        </a>
+
+                                    </li>
+                                    <li class="nav-item online-catalogues">
+                                        <a class="nav-link " href="#">Online Catalogues
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="none" fill-rule="evenodd" stroke="#000"
+                                                        stroke-linejoin="round" stroke-width="2" d="M7 10L12 14 17 10"
+                                                        transform="matrix(0 1 1 0 0 0)" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item find-our-stores">
+                                        <a class="nav-link " href="#">Find our Stores
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="none" fill-rule="evenodd" stroke="#000"
+                                                        stroke-linejoin="round" stroke-width="2" d="M7 10L12 14 17 10"
+                                                        transform="matrix(0 1 1 0 0 0)" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item new-products">
+                                        <a class="nav-link " href="#">New Products
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="none" fill-rule="evenodd" stroke="#000"
+                                                        stroke-linejoin="round" stroke-width="2" d="M7 10L12 14 17 10"
+                                                        transform="matrix(0 1 1 0 0 0)" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item about-us">
+                                        <a class="nav-link" href="#">About Us
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="none" fill-rule="evenodd" stroke="#000"
+                                                        stroke-linejoin="round" stroke-width="2" d="M7 10L12 14 17 10"
+                                                        transform="matrix(0 1 1 0 0 0)" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item contact-us">
+                                        <a class="nav-link " href="#">Contact Us
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24">
+                                                    <path fill="none" fill-rule="evenodd" stroke="#000"
+                                                        stroke-linejoin="round" stroke-width="2" d="M7 10L12 14 17 10"
+                                                        transform="matrix(0 1 1 0 0 0)" />
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="follow text-capitalize">
+                                    <h6 class="text-uppercase">share
+                                    </h6>
+                                    <div class="social-icon">
+                                        <div
+                                            class="icon col-8 col-sm-5 col-md-4  mx-auto d-flex justify-content-between ">
+                                            <a class=" facebook d-inline-block" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                                    viewBox="0 0 28 28">
+                                                    <path fill-rule="evenodd"
+                                                        d="M14.956 28H1.546C.691 28 0 27.308 0 26.455V1.545C0 .692.692 0 1.545 0h24.91C27.308 0 28 .692 28 1.545v24.91c0 .853-.692 1.545-1.545 1.545H19.32V17.157h3.64l.544-4.226H19.32v-2.698c0-1.223.34-2.057 2.094-2.057l2.237-.001v-3.78c-.387-.051-1.715-.166-3.26-.166-3.227 0-5.435 1.97-5.435 5.586v3.116h-3.65v4.226h3.65V28z" />
+                                                </svg>
+
+                                            </a>
+                                            <a class="twitter d-inline-block " href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="24"
+                                                    viewBox="0 0 28 24">
+                                                    <path fill-rule="evenodd"
+                                                        d="M28 2.841c-1.029.482-2.137.808-3.298.954 1.186-.75 2.097-1.937 2.526-3.351-1.111.693-2.34 1.198-3.65 1.468C22.531.735 21.037 0 19.384 0c-3.17 0-5.742 2.713-5.742 6.059 0 .474.049.936.147 1.38-4.774-.254-9.006-2.663-11.84-6.333-.496.898-.778 1.94-.778 3.05 0 2.1 1.014 3.955 2.555 5.042-.94-.03-1.827-.305-2.603-.756v.075c0 2.936 1.98 5.385 4.61 5.94-.481.142-.99.213-1.514.213-.37 0-.73-.036-1.08-.107.73 2.406 2.85 4.159 5.365 4.205-1.966 1.626-4.444 2.595-7.134 2.595-.464 0-.922-.027-1.371-.083C2.542 22.996 5.563 24 8.806 24 19.373 24 25.15 14.77 25.15 6.762c0-.263-.005-.527-.015-.785 1.123-.855 2.097-1.92 2.865-3.136" />
+                                                </svg>
+
+                                            </a>
+                                            <a class="pinterest d-inline-block" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                                    viewBox="0 0 28 28">
+                                                    <path fill-rule="evenodd"
+                                                        d="M14 0C6.27 0 0 6.268 0 14c0 5.732 3.448 10.658 8.382 12.823-.04-.976-.007-2.152.242-3.216.27-1.136 1.8-7.627 1.8-7.627s-.445-.894-.445-2.216c0-2.075 1.203-3.624 2.7-3.624 1.272 0 1.888.957 1.888 2.102 0 1.28-.816 3.194-1.236 4.968-.35 1.486.744 2.696 2.21 2.696 2.652 0 4.438-3.406 4.438-7.443 0-3.067-2.066-5.364-5.825-5.364-4.246 0-6.892 3.166-6.892 6.703 0 1.221.36 2.08.922 2.746.26.308.295.43.201.782-.066.255-.22.877-.285 1.123-.094.354-.38.482-.7.35-1.957-.798-2.868-2.94-2.868-5.349 0-3.976 3.354-8.747 10.006-8.747 5.345 0 8.864 3.87 8.864 8.021 0 5.492-3.053 9.595-7.556 9.595-1.51 0-2.932-.816-3.42-1.743 0 0-.812 3.225-.984 3.847-.296 1.079-.877 2.159-1.409 2.998 1.26.372 2.59.575 3.968.575C21.732 28 28 21.732 28 14S21.732 0 14 0" />
+                                                </svg>
+
+                                            </a>
+                                            <a class="instagram d-inline-block" href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+                                                    viewBox="0 0 28 28">
+                                                    <path fill-rule="evenodd"
+                                                        d="M14 0c3.802 0 4.279.016 5.772.084 1.49.068 2.508.305 3.399.651.92.358 1.7.836 2.48 1.615.778.778 1.256 1.559 1.614 2.48.346.89.583 1.908.65 3.398C27.985 9.72 28 10.198 28 14c0 3.802-.016 4.279-.084 5.772-.068 1.49-.305 2.508-.651 3.399-.358.92-.836 1.7-1.615 2.48-.778.778-1.559 1.256-2.48 1.614-.89.346-1.908.583-3.398.65-1.493.069-1.97.085-5.772.085-3.802 0-4.279-.016-5.772-.084-1.49-.068-2.508-.305-3.399-.651-.92-.358-1.7-.836-2.48-1.615-.778-.778-1.256-1.559-1.614-2.48-.346-.89-.583-1.908-.65-3.398C.015 18.28 0 17.802 0 14c0-3.802.016-4.279.084-5.772.068-1.49.305-2.508.651-3.399.358-.92.836-1.7 1.615-2.48.778-.778 1.559-1.256 2.48-1.614.89-.346 1.908-.583 3.398-.65C9.72.015 10.198 0 14 0zm0 2.523c-3.738 0-4.181.014-5.657.081-1.365.062-2.106.29-2.6.482-.653.254-1.12.558-1.61 1.047-.49.49-.793.957-1.047 1.61-.192.494-.42 1.235-.482 2.6-.067 1.476-.081 1.919-.081 5.657s.014 4.181.081 5.657c.062 1.365.29 2.106.482 2.6.254.653.558 1.12 1.047 1.61.49.49.957.793 1.61 1.047.494.192 1.235.42 2.6.482 1.476.067 1.919.081 5.657.081s4.181-.014 5.657-.081c1.365-.062 2.106-.29 2.6-.482.653-.254 1.12-.558 1.61-1.047.49-.49.793-.957 1.047-1.61.192-.494.42-1.235.482-2.6.067-1.476.081-1.919.081-5.657s-.014-4.181-.081-5.657c-.062-1.365-.29-2.106-.482-2.6-.254-.653-.558-1.12-1.047-1.61-.49-.49-.957-.793-1.61-1.047-.494-.192-1.235-.42-2.6-.482-1.476-.067-1.919-.081-5.657-.081zM6.81 14c0-3.97 3.22-7.19 7.19-7.19s7.19 3.22 7.19 7.19-3.22 7.19-7.19 7.19S6.81 17.97 6.81 14zM14 18.667c2.577 0 4.667-2.09 4.667-4.667S16.577 9.333 14 9.333 9.333 11.423 9.333 14s2.09 4.667 4.667 4.667zm9.153-12.14c0 .928-.752 1.68-1.68 1.68-.928 0-1.68-.752-1.68-1.68 0-.928.752-1.68 1.68-1.68.928 0 1.68.752 1.68 1.68z" />
+                                                </svg>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="footer mx-auto">
+                                        <div class="priv ">
+                                            <a href="#">Privacy . Terms</a>
+                                        </div>
+                                        <div class="copy ">
+                                            <h6> &copy2020 Polska Cosmet</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <nav class="navbar navbar-expand-lg  navbar-dark no-gutters ">
                             <!-- Navbar links -->
                             <div class="collapse navbar-collapse col-lg-9" id="collapsibleNavbar">
@@ -498,17 +655,19 @@
         </div>
     </footer>
     <!-- end footer-->
+
+    <!--Bootstrap js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!--slick-->
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <!--Script livereload-->
+    <!-- <script src="http://localhost:35729/livereload.js"></script> -->
+    <!--Custom js-->
+    <script src="js/main.js"></script>
 </body>
 
-<!--Bootstrap js-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<!--slick-->
-<script type="text/javascript" src="../slick/slick.min.js"></script>
-<!--Script livereload-->
-<script src="http://localhost:35729/livereload.js"></script>
-<!--Custom js-->
-<script src="js/main.js"></script>
+
 
 </html>

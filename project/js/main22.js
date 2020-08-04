@@ -16,6 +16,7 @@ function loadDoc() {
             slickSlider();
         }
     };
+
     xhttp.open("GET", "https://raw.githubusercontent.com/alaa-abuhani/project-version/master/dist/pro.json", true);
     xhttp.send();
 }

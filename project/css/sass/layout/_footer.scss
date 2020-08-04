@@ -200,13 +200,13 @@ footer .copy h6 {
   }
 }
 
-.social {
+footer .social {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 @media (max-width: 767.98px) {
-  .social-icon {
+  footer .social-icon {
     margin: 30px auto 40px auto;
   }
 }

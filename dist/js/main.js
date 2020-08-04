@@ -69,6 +69,7 @@ function loadDoc() {
             slickSlider();
         }
     };
+
     xhttp.open("GET", "https://raw.githubusercontent.com/alaa-abuhani/project-version/master/dist/pro.json", true);
     xhttp.send();
 }
@@ -146,4 +147,11 @@ function creatProduct(obj) {
     console.log(product);
 
     return product;
+}
+function openNav() {
+    document.getElementById('myNav').style.height = '100%'
+}
+
+function closeNav() {
+    document.getElementById('myNav').style.height = '0%'
 }
