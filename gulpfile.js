@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    uglify = require('gulp-uglify');
+    minify = require('gulp-minify');
 
 
 //html task
@@ -30,7 +30,7 @@ gulp.task('js', async function () {
     return gulp.src('project/js/*.js')
         .pipe(sourcemaps.init())
         .pipe(concat('main.js'))
-        // .pipe(uglify())
+        .pipe(minify())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/js'))
 });
