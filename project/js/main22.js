@@ -10,7 +10,6 @@ function loadDoc() {
             for (let i = 0; i < products.items.length; i++) {
 
                 container.appendChild(creatProduct(products.items[i]));
-
             }
 
             slickSlider();
@@ -22,22 +21,30 @@ function loadDoc() {
 }
 loadDoc();
 
+
 //creat product
 function creatProduct(obj) {
 
     //creat item
     const product = document.createElement("div");
     product.className = "card";
+    // card onmouseover
+    const clildproductAtt = document.createAttribute("onmouseover");
+    clildproductAtt.value = "onover(this)";
+    product.setAttributeNode(clildproductAtt);
+
+    //card onmouseleave
+    const clildproductAtt2 = document.createAttribute("onmouseleave");
+    clildproductAtt2.value = "onleave(this)";
+    product.setAttributeNode(clildproductAtt2);
     // append cart
     const cart = document.createElement("div");
     cart.className = "cart";
+    cart.className = "cart cart-hover";
     const assetCart = document.createElement("div");
     assetCart.className = "asset-cart";
 
-
-
-
-
+    //append mini cart img
     const clildCart = document.createElement("img");
     const clildCartAtt = document.createAttribute("src");
     clildCartAtt.value = obj["product-cart"];
@@ -45,7 +52,7 @@ function creatProduct(obj) {
     const clildCartAtt2 = document.createAttribute("alt");
     clildCartAtt2.value = ("Card cart");
     clildCart.setAttributeNode(clildCartAtt2);
-    clildCart.className = "img";
+    clildCart.className = "img-hover";
     assetCart.appendChild(clildCart);
     cart.appendChild(assetCart);
     product.appendChild(cart);
@@ -53,9 +60,7 @@ function creatProduct(obj) {
 
     const containerImg = document.createElement("div");
     containerImg.className = "container-img";
-
-
-    //append img
+    //append img-card
     const child1 = document.createElement("img");
     const chdAtt1 = document.createAttribute("src");
     chdAtt1.value = obj["product-img"];
@@ -65,7 +70,6 @@ function creatProduct(obj) {
     child1.setAttributeNode(chdAtt2);
     child1.className = "img";
     containerImg.appendChild(child1);
-
     product.appendChild(containerImg);
 
     //append card body
@@ -91,7 +95,6 @@ function creatProduct(obj) {
     const threeAtt = document.createTextNode(obj["product-line"]);
     three.appendChild(threeAtt);
     child2.appendChild(three);
-    console.log(product);
 
     return product;
 }
